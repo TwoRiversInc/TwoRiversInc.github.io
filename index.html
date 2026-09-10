@@ -24,13 +24,18 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         .app-icon {
-    　　　　　width: 120px !important;          /* アイコンの横幅 */
-    　　　　　height: 120px !important;         /* アイコンの縦幅 */
-    　　　　　object-fit: cover;     /* 画像が歪まないようにきれいに収める設定 */
-    　　　　　border-radius: 24px;   /* 角を丸くする（iPhoneアプリ風） */
-    　　　　　margin: 0 auto 20px;   /* 中央寄せにする */
-    　　　　　display: block;        /* ブロック要素にしてレイアウト崩れを防ぐ */
-    　　　　　box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 軽い影をつける */
+            width: 120px;
+            height: 120px;
+            background: #ccc; /* 後で画像に差し替え可能 */
+            border-radius: 24px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
         .tagline { font-size: 1.2rem; color: #666; margin-bottom: 30px; }
@@ -72,7 +77,7 @@
 
     <header>
         <!-- アプリのアイコン -->
-        <img src="./img/icon_TokyoFXDefence.png" alt="アプリアイコン" class="app-icon"　width="120" height="120">
+        <img src="img/icon_TokyoFXDefence.png" alt="アプリアイコン" class="app-icon">
         <h1>アプリ名（TokyoFXDefence）</h1>
         <p class="tagline">円を守れ！片柳さつ子！</p>
         
